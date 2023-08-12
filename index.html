@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <!-- <div class="site-content">
+      <div class="site-header bg-danger">
+        <div class="container">
+          <a class="d-flex text-decoration-none align-items-center " href="">
+            <img class="logo-img pt- " src="./img/logo.png" alt="" />
+            <div class="logo-type ms-3">
+              <h1 class="fs-5 text-white">Weather</h1>
+              <small class="text-white ">tagline goes here</small>
+            </div>
+
+            <ul class="">
+
+            </ul>
+        </div>
+      </div>
+    </div> -->
+
+
+    <nav class="navbar navbar-expand-lg bg-section">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img class="fa-2 me-2" src="./img/logo.png" alt="">
+          <div class="logo-type">
+            <h6 class="text-white">Weather</h6>
+            <h6 class="text-white">tagline goes here<h6>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-white btn btn-outline-primary " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white   btn btn-outline-primary " href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white   btn btn-outline-primary" href="#">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white  btn btn-outline-primary" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white   btn btn-outline-primary" href="#">Contact</a>
+            </li>
+            
+        </div>
+      </div>
+    </nav>
+    
+
+
+
+
+
+
+
+
+    <div class="home">
+      <div class="container    bg-danger">
+        <div class="find-location  ">
+          <input  id="locationInput" type="text" placeholder="Find your location..." class="loction-input rounded py-2">
+          <button id="searchBtn" class=" find-button btn  btn-moha py-1 mt-1  ">Find</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="forcast-table ">
+      <div class="container info-table ">
+        <div class="row  gx-0">
+          <div id="current"  class="col-md-4 ">
+            <div class="forcast-inner  ">
+              <div class="forecast-header   d-flex justify-content-between align-items-center terr-color rounded-top rounded-end-0">
+                <p class="ms-3 p-color pt-">Tuesday</p>
+                <p class="me-3 p-color pt-3">8August</p>
+              </div>
+              <div class="forcast-content bg-div py-4 px-3">
+                <div class="p-color fs-5  pt-4 ps-3" >Cairo</div>
+                <div class="degree  text-white display-2 fw-bolder">
+                  <div class="num  d-flex mt-4 ps-3 ">
+                    <p>33.8</p>
+                    <sup class="py-5">o</sup>
+                    <p>C</p>
+
+                  </div>
+                  <div class="forcast-ico ps-5 fs-1">
+                    <img  src="./img/113.png" alt="">
+                  </div>
+                </div>
+                <div class="custom text-primary ps-3 mt-3 mb-3 fs-5">sunny</div>
+                <div class="info-climate  ps-3 d-flex justify-content-between">
+                  <span class="p-color  "><img src="./img/icon-umberella.png" alt=""> 20%</span>
+                
+                <span class="p-color  "><img src="./img/icon-wind.png" alt=""> 18km/h</span>
+                <span class="p-color  "><img src="./img/icon-compass.png" alt=""> East</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="second" class="col-md-4">
+            <div class="forcast-inner ">
+              <div class="forecast-header  d-flex justify-content-center align-items-center head-color ">
+                <p class="ms-3 p-color pt-3">Tuesday</p>
+              
+              </div>
+              <div class="forcast-content bg-section py-3 px-3">
+
+                <div class="forcast-ico d-flex justify-content-center  mt-3 fs-1">
+                  <img  src="./img/113.png" alt="">
+                </div>
+                <div class="num text-white fs-2 fw-bold  d-flex justify-content-center mt-5 ">
+                  <p>33.8</p>
+                  <sup class="py-4">o</sup>
+                  <p>C</p>
+
+                </div>
+                <small class="p-color d-flex justify-content-center mt-2 fs-5">25.1
+                  <sup class="py-2 ">o</sup>
+                </small>
+                
+                
+                <div class="custom text-primary mt-5 d-flex justify-content-center mt-2 mb-3 fs-5">sunny</div>
+                 
+              </div>
+            </div>
+          </div>
+          <div id="third" class="col-md-4">
+            <div class="forcast-inner ">
+              <div class="forecast-header  d-flex justify-content-center align-items-center terr-color rounded-top rounded-start-0">
+                <p class="ms-3 p-color pt-3">Tuesday</p>
+              
+              </div>
+              <div class="forcast-content bg-div py-4 px-3">
+
+                <div class="forcast-ico d-flex justify-content-center  mt-3 fs-1">
+                  <img  src="./img/113.png" alt="">
+                </div>
+                <div class="num text-white fs-2 fw-bold  d-flex justify-content-center mt-5 ">
+                  <p>33.8</p>
+                  <sup class="py-4">o</sup>
+                  <p>C</p>
+
+                </div>
+                <small class="p-color d-flex justify-content-center mt-2 fs-5">25.1
+                  <sup class="py-2 ">o</sup>
+                </small>
+                
+                
+                <div class="custom text-primary mt-5 d-flex justify-content-center mt-2 mb-3 fs-5">sunny</div>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
